@@ -1,0 +1,53 @@
+<!--
+  Generated template for the CadastrarPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+  Aluno:Diego Silva Santini dos Santos RA:816117855
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Cadastrar</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content >
+    <ion-list>
+        <ion-item>
+          <ion-label color="primary">Titulo</ion-label>
+          <ion-input placeholder="Digite o titulo do filme"></ion-input>
+        </ion-item>
+        
+            <ion-item>
+              <ion-label color="primary">Direção</ion-label>
+              <ion-input placeholder="Digite o nome do Diretor(a)"></ion-input>
+            </ion-item>
+            
+                <ion-item>
+                  <ion-label color="primary">Popularidade</ion-label>
+                  <ion-input placeholder="Popularidade(0-100%)"></ion-input>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label color="primary">Genero</ion-label>
+                  <ion-input placeholder="Qual o genero do filme"></ion-input>
+                </ion-item>
+                
+                <ion-item>
+                    <ion-label color="primary">Data de Lançamento</ion-label>
+                    <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="myDate">
+                    </ion-datetime>
+                  </ion-item>
+
+                    <ion-item>
+                        <ion-label color="primary">Descrição</ion-label>
+                        <ion-textarea placeholder="Descrição"></ion-textarea>
+                    </ion-item>
+      </ion-list>
+
+<button ion-button round (click)="filme()">Cadastrar</button>
+
+</ion-content>
